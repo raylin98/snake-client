@@ -7,16 +7,16 @@ const connect = function() {
   });
 
   conn.setEncoding("utf-8");
-  conn.on("connect", () => {
-    console.log("Connection successful");
-  })
 
-  conn.on("data", () => {
-    console.log("You ded cuz you idled")
+  conn.on("connect", () => {
+    console.log("Sucessfully connected to game server");
+    conn.write(`Name: RAY`);
+  });
+
+  conn.on("data", data => {
+    console.log(data);
   });
   return conn;
-}
+};
 
-console.log("Connecting ...");
-
-module.exports = connect;
+module.exports = { connect };
