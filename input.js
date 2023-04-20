@@ -19,7 +19,6 @@ const setupInput = function(conn) {
   return stdin;
 };
 
-
 const handleUserInput = function(key) {
   const stdout = process.stdout;
   if (key === '\u0003') {
@@ -52,7 +51,5 @@ const handleUserInput = function(key) {
     connection.write(playerMsg + msg3);
   }
 };
-
-
 
 module.exports = { setupInput };
