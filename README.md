@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-[!["screenshot description"](#)](htt![snake](https://user-images.githubusercontent.com/124003437/233255306-3c6ab697-ddd9-4ae5-bd08-1276b719057d.png)
+[!["screenshot description"](#)][snake](https://user-images.githubusercontent.com/124003437/233255306-3c6ab697-ddd9-4ae5-bd08-1276b719057d.png)
 - Image of the game running
 
 
