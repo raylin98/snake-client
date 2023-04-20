@@ -1,3 +1,5 @@
+const { MOVE_UP, MOVE_LEFT, MOVE_DOWN, MOVE_RIGHT } = require("./constant");
+
 let connection;
 
 const playerMsg = "Say: ";
@@ -17,6 +19,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+
 const handleUserInput = function(key) {
   const stdout = process.stdout;
   if (key === '\u0003') {
@@ -25,19 +28,19 @@ const handleUserInput = function(key) {
   }
 
   if (key === "w") {
-    connection.write("Move: up");
+    connection.write(MOVE_UP);
   }
 
   if (key === "s") {
-    connection.write("Move: down");
+    connection.write(MOVE_DOWN);
   }
 
   if (key === "a") {
-    connection.write("Move: left");
+    connection.write(MOVE_LEFT);
   }
 
   if (key === "d") {
-    connection.write("Move: right");
+    connection.write(MOVE_RIGHT);
   }
   if (key === "q") {
     connection.write(playerMsg + msg1);
